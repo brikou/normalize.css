@@ -120,21 +120,18 @@ button, input, select, textarea {
     *vertical-align: middle; }
 
 button, input {
-    line-height: normal;
-    *overflow: visible; }
-
-table {
-    button, input {
-        *overflow: auto; } }
+    line-height: normal; }
 
 button {
     cursor: pointer;
-    -webkit-appearance: button; }
+    -webkit-appearance: button;
+    *overflow: visible; }
 
 input {
     &[type="button"], &[type="reset"], &[type="submit"] {
         cursor: pointer;
-        -webkit-appearance: button; }
+        -webkit-appearance: button;
+        *overflow: visible; }
     &[type="checkbox"], &[type="radio"] {
         box-sizing: border-box;
         padding: 0; }

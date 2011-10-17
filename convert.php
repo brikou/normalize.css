@@ -15,3 +15,5 @@ $scss = preg_replace('/^(\s*)/m', '$1$1', $scss);
 $scss = preg_replace('/\}$\n^([a-z])/m', "}\n\n\$1", $scss);
 
 file_put_contents($f, $scss);
+
+shell_exec('sass --check '.$f);
